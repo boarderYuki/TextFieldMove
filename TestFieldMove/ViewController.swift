@@ -63,6 +63,7 @@ class ViewController: UIViewController, UITextFieldDelegate{
 
     
     func keyboardWillShowOrHide(notification: Notification) {
+        // 아래쪽 텍스트필드를 편집하는 경우만 스크롤
         if TextField.isEditing {
             
             guard let userInfo = notification.userInfo else {
